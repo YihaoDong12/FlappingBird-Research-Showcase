@@ -3,12 +3,12 @@
   "source_commit": "a6c2c00e56c442ddad382ef75d5a2eb66678076b",
   "source_root": "public/reproducibility/",
   "files": [
-    {"path": "motion-reference.csv", "source_path": "data/target_initialized_equal_arc_76_mm.csv", "sha256": "15f5c3d71bb92ddefc4ccd316c3dc940165a51ac8176d251c391d68a62d613dd"},
-    {"path": "motion-reference-metadata.json", "source_path": "data/target_metadata.json", "sha256": "e4fc6fc58a096a446ac658db577182050ba2158575c67f79a516fa74dd8e97e0"},
-    {"path": "strict-phase-trajectories.csv", "source_path": "data/inverse_rotated_strict_trajectories.csv", "sha256": "a2b7d814adbb34a78e9f39e4bd37f4e5190948d4c60b044a6a32546210f1eb3d"},
+    {"path": "motion-reference.csv", "source_path": "data/target_initialized_equal_arc_76_mm.csv", "sha256": "ea223664b5bf371759f6d1175506e9695292da2726b11f2a5a784b6a4c8e2392"},
+    {"path": "motion-reference-metadata.json", "source_path": "data/target_metadata.json", "sha256": "1cd322283157076d4e8c0676551895edaa4248aa0a46f05ed69daf721283fdea"},
+    {"path": "strict-phase-trajectories.csv", "source_path": "data/inverse_rotated_strict_trajectories.csv", "sha256": "6b34a9be75ede26fc023f5f2ef1fe40c9fa6f0af111cf657d009e5b549b6b78b"},
     {"path": "model/fourbar3d_python.py", "source_path": "model/fourbar3d_python.py", "sha256": "04b37250d57cbb7ca38a437d5d3898d17544556f1f059b40a5c8ceab97491990"},
     {"path": "model/fourbar_optimization.py", "source_path": "model/fourbar_optimization.py", "sha256": "cb66f6f50f0aa958e07c983955a36cb7979262692ff88163c813049bea256f18"},
-    {"path": "parameters/optimization-input.json", "source_path": "data/optimization_input.json", "sha256": "586b199ed6719b44c231258aaa16ecf56ce0b4fb05eae80fd963bdb577908891"},
-    {"path": "parameters/final-variables-and-bounds.csv", "source_path": "data/final_variables_and_bounds.csv", "sha256": "e28eb9a558e743786466a3aadc800536361b183b933431b6b5a14fc91f4e7443"}
+    {"path": "parameters/optimization-input.json", "source_path": "data/optimization_input.json", "sha256": "6ef7276c49a71669f7c34d5476246dee3d5cecd9dad14ff8acbff7a7c11dea12"},
+    {"path": "parameters/final-variables-and-bounds.csv", "source_path": "data/final_variables_and_bounds.csv", "sha256": "ea92c37c9c0824cf34ad6fcf879d15a6df9018487561a04dc265f8486926e374"}
   ]
 }

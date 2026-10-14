@@ -1,0 +1,6 @@
+* text=auto eol=lf
+research/model/** -text
+research/parameters/** -text
+research/motion-reference.csv -text
+research/motion-reference-metadata.json -text
+research/strict-phase-trajectories.csv -text
