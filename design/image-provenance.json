@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "generated_on": "2026-10-13",
+  "integrated_on": "2026-10-14",
+  "notice": "Concept illustrations, not measured data, simulated flow fields, or built prototypes.",
+  "generated": [
+    {
+      "path": "media/significance-natural-motion.png",
+      "prompt": "Use case: scientific-educational. Asset type: 16:9 editorial illustration for an English Flapping Bird research website, research significance. Primary request: illustrate learning the functional meaning of evolved bird wing movements, not a literal evolutionary timeline. Show one anatomically realistic generic feathered flapping bird flying toward the right, with exactly two wings and two legs, fine natural feather textures. Discreet semi-transparent echoes of just the wing in two earlier stroke positions suggest a time sequence; distinguish them clearly from extra anatomical wings. A delicate amber curved trail near the wingtip suggests motion without looking like measured data. Calm warm ivory background, soft dimensional natural-history realism, muted slate feathers, sage and warm copper accents. Bird and wing strokes fully visible, tightly composed and readable in a small landscape card. This is a conceptual illustration of a research question, not experimental measurement. No lettering, no numbers, no labels, no axes, no fake charts, no watermarks, no logos, no science fiction, no evolutionary ladder or claim of universal perfection."
+    },
+    {
+      "path": "media/significance-motion-flow.png",
+      "prompt": "Use case: scientific-educational. Asset type: 16:9 technical editorial concept illustration for the research significance section of a Flapping Bird website. Primary request: show how flexible flapping-wing motion couples to the air and creates lift/thrust. One clean engineered flexible bird-shaped membrane wing with slender graphite leading edge and realistic surface curvature, on a discreet root hinge, shown side-obliquely. Several restrained translucent teal and warm copper vortex ribbons shed behind it show conceptual wake organization; do not use dense smoke, numeric colorbars or simulation grids. Emphasize relationship between wing deformation and wake, not a verified result or actual measured flow. Soft warm ivory studio background, natural shadows, desaturated sage, graphite, silver and copper, refined editorial 3D rendering consistent with a premium science website. Whole wing visible and generously readable at card size, no large margins. No text, arrows, symbols, dimensions, labels, numbers, watermarks, logos, fake data, neon, holographic effects or clutter."
+    },
+    {
+      "path": "media/significance-motion-strategy.png",
+      "prompt": "Use case: scientific-educational. Asset type: 16:9 conceptual illustration for an English Flapping Bird research website, research significance and future work. Primary request: visualize the search for efficient, task-dependent flapping trajectories, without implying a proven best solution. Show one elegant minimal articulated flapping-wing robotic bird, graphite spars, brushed metal joints and pale membrane wings, fully visible three-quarter view. Around the wingtip show three clean distinct thin looped trajectory ribbons in desaturated teal, graphite and warm copper, representing alternative cyclic movement paths. No winning badge, no rankings, no numerical values, no plotted axes or measured-data appearance. Clean warm ivory studio background, soft natural shadow, restrained high-end industrial design visualization. Realistic coherent two-wing construction, no rotor or propeller. Tight balanced landscape framing, entire wings and three paths visible. No text, no letters, no labels, no numbers, no watermark, no logos, no neon, no exaggerated futurism. Concept only, not a built prototype or validated optimization."
+    }
+  ],
+  "manuscript_figure": {
+    "path": "media/pinn-method.png",
+    "source": "Author-provided Overleaf manuscript, compiled Figure 1, accessed 2026-10-14",
+    "method": "Rendered the existing PDF figure at high resolution; page header and surrounding manuscript text excluded, complete English figure retained.",
+    "scope": "Method illustration only. Calibration and experimental validation remain incomplete in the manuscript."
+  }
+}

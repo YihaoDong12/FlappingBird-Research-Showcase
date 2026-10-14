@@ -1,0 +1,5 @@
+.preview/
+_site/
+node_modules/
+.source-materials/
+*.log
