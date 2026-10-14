@@ -6,7 +6,7 @@ const output = path.join(root, '_site');
 // Deploy only the page and media actually referenced by it, never local logs or launch scripts.
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const files = new Set(['index.html', 'style.css', 'app.js', 'favicon.svg']);
-for (const match of html.matchAll(/(?:src|poster|data-film|data-image)="(media\/[^"?#]+)"/g)) {
+for (const match of html.matchAll(/(?:src|poster|data-film|data-image|data-animation|data-poster)="(media\/[^"?#]+)"/g)) {
   const relative = match[1];
   if (!/^media\/[a-zA-Z0-9._-]+$/.test(relative)) throw new Error('Invalid media path: ' + relative);
   files.add(relative);

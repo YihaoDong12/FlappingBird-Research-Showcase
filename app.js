@@ -3,6 +3,22 @@
 const $ = selector => document.querySelector(selector);
 const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const ambient = [...document.querySelectorAll('.ambient-video')];
+const diagrams = [...document.querySelectorAll('.research-animation')];
+const visibleDiagrams = new Set();
+function syncDiagrams() {
+  diagrams.forEach(img => {
+    const src = !motion.matches && !document.hidden && visibleDiagrams.has(img)
+      ? img.dataset.animation : img.dataset.poster;
+    if (img.getAttribute('src') !== src) img.src = src;
+  });
+}
+const diagramObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => entry.isIntersecting ? visibleDiagrams.add(entry.target) : visibleDiagrams.delete(entry.target));
+  syncDiagrams();
+}, { threshold: 0.15 });
+diagrams.forEach(img => diagramObserver.observe(img));
+document.addEventListener('visibilitychange', syncDiagrams);
+motion.addEventListener('change', syncDiagrams);
 const trajectoryViews = [...document.querySelectorAll('.trajectory-grid video')];
 const hero = $('#hero-video'), heroToggle = $('#hero-toggle');
 const dialog = $('#film-dialog'), dialogVideo = $('#dialog-video');
@@ -91,7 +107,8 @@ dialogVideo.addEventListener('error', () => {
 document.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {
   focusedBeforeDialog = button;
   $('#image-title').textContent = button.dataset.title || 'Research figure';
-  dialogImage.src = button.dataset.image;
+  dialogImage.src = motion.matches && button.querySelector('.research-animation')
+    ? button.querySelector('.research-animation').dataset.poster : button.dataset.image;
   dialogImage.alt = button.querySelector('img')?.alt || button.dataset.title || 'Research figure';
   imageDialog.showModal();
   document.body.classList.add('dialog-open');

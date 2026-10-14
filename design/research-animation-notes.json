@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-14",
+  "method": "Code-native vector drawings rendered into looping GIFs with Pillow",
+  "source": "scripts/render-research-animations.py",
+  "assets": [
+    {"gif": "media/wind-tunnel-study-animated.gif", "poster": "media/wind-tunnel-study-animated.png", "purpose": "Prescribed single-DOF wing cycle, camera and force balance"},
+    {"gif": "media/pinn-workflow-animated.gif", "poster": "media/pinn-workflow-animated.png", "purpose": "Observation, joint physics-informed modelling, aerodynamic-force and reaction outputs"}
+  ],
+  "frames": 80,
+  "frame_duration_ms": 80,
+  "scope": "Editorial schematics. Geometry, motion and airflow traces illustrate the research workflow; they are not calibrated geometry, CFD fields or validated force predictions.",
+  "accessibility": "Show static posters when reduced motion is preferred; animate only while the diagrams are on screen."
+}

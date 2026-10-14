@@ -1174,23 +1174,44 @@ dialog::backdrop { background: #030d12e8; backdrop-filter: blur(12px); }
 }
 @media (max-width: 360px) {
   .site-header .brand > span { font-size: var(--fs-subtitle); }
+  .hero { min-height: 530px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *:before, *:after { transition: none !important; animation: none !important; }
 }
-/* Let the manuscript's wide five-panel figure use the full reading width. */
-#aerodynamics .aero-grid { grid-template-columns: minmax(0,1fr); gap: 14px; }
-#aerodynamics .figure-zoom > img { aspect-ratio: auto; }
-#aerodynamics .aero-evidence figcaption { display: flex; justify-content: space-between; gap: 12px; }
-@media (min-width: 761px) {
-  #aerodynamics .aero-model { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); column-gap: 30px; row-gap: 6px; }
-  #aerodynamics .aero-model > .eyebrow { grid-column: 1; margin: 0; }
-  #aerodynamics .aero-model > h4 { grid-column: 1; margin: 0; }
-  #aerodynamics .aero-model > p:not(.eyebrow):not(.model-validation) { grid-column: 1; }
-  #aerodynamics .model-constraints { grid-column: 2; grid-row: 1 / 4; margin: 0; align-content: center; }
-  #aerodynamics .aero-model > .model-validation { grid-column: 1 / -1; margin-top: 8px; }
+/* Visual research sequence, using the existing type scale and chapter palette. */
+.hero h1 { max-width: 840px; line-height: 1.12; }
+.hero h1 > span { display: block; }
+#aerodynamics .aero-grid { grid-template-columns: minmax(0,1fr) 26px minmax(0,1fr); gap: 12px; align-items: start; }
+#aerodynamics .figure-zoom > img { aspect-ratio: 16 / 9; }
+#aerodynamics .aero-evidence figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 12px; }
+#aerodynamics .aero-evidence h4 { font-size: var(--fs-subtitle); color: #e3edf6; }
+#aerodynamics .aero-evidence figcaption > span { font-size: var(--fs-label); color: #b8cddd; }
+#aerodynamics .aero-link { align-self: center; text-align: center; font-size: var(--fs-heading); font-weight: 900; color: #b2cde3; }
+#aerodynamics .aero-topics, #aerodynamics .pinn-stage-labels, #aerodynamics .physics-links { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; padding: 10px 12px; font-size: var(--fs-label); color: #d0e0ec; text-align: center; }
+#aerodynamics .pinn-stage-labels { background: #243d50; }
+#aerodynamics .physics-links { padding-top: 0; color: #b8cddd; }
+#aerodynamics .aero-status { margin-top: 10px; font-size: var(--fs-label); color: #b8cddd; }
+#next .significance-grid { grid-template-columns: minmax(0,1fr) 26px minmax(0,1fr) 26px minmax(0,1fr); gap: 10px; margin-top: 14px; }
+#next .significance-arrow { align-self: center; text-align: center; font-size: var(--fs-heading); font-weight: 900; color: #8d6543; }
+#next .significance-card h4 { display: flex; gap: 10px; align-items: baseline; }
+#next .significance-card h4 > span { font-size: var(--fs-label); color: #946a45; }
+#next .significance-card p { margin-top: 3px; }
+@media (max-width: 760px) {
+  #aerodynamics .aero-grid { grid-template-columns: minmax(0,1fr); gap: 8px; }
+  #aerodynamics .aero-link, #next .significance-arrow { transform: rotate(90deg); line-height: 1; }
+  #next .significance-grid { grid-template-columns: minmax(0,1fr); gap: 8px; }
+  #next .significance-card { grid-template-columns: minmax(0,.9fr) minmax(0,1fr); grid-template-rows: auto; }
+  #next .significance-card > img { border-bottom: 0; border-right: 1px solid #dfcfbc; }
+}
+@media (max-width: 600px) {
+  .hero-content { padding-top: 65px; }
+  .hero h1 { max-width: 100%; }
+  #aerodynamics .aero-topics, #aerodynamics .pinn-stage-labels, #aerodynamics .physics-links { gap: 5px; padding-inline: 8px; }
+  #next .significance-card { grid-template-columns: minmax(0,1fr); grid-template-rows: auto 1fr; }
+  #next .significance-card > img { border-right: 0; border-bottom: 1px solid #dfcfbc; }
 }
 @media print {
   .site-header, .hero-visual, .hero-caption, .presentation-button, .play-button, .expand-button, .upload-button, .back-top { display: none; }

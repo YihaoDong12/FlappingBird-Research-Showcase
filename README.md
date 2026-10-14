@@ -37,6 +37,6 @@ python research/verify_motion.py
 - Flight and marker-tracking videos show existing footage. Mechanism videos show simulations.
 - Wind-tunnel aerodynamic analysis and the fluid–structure-coupled PINN are ongoing method and experiment-design work. The manuscript draft does not yet establish validated force-prediction accuracy or completed wake measurements.
 - Future-work and research-significance illustrations are conceptual, not photographs of completed experiments or computed flow results. Image provenance is recorded in `design/`.
-- The unpublished Overleaf manuscript and its full source archive are not distributed here. Only selected author-provided method illustrations are used on the public website.
+- The aerodynamic section uses concise, code-drawn animated schematics of the planned experiment and the manuscript's modelling workflow. Motion and airflow traces are illustrative; the unpublished manuscript and its full source archive are not distributed here.
 
 Use concise English labels, preserve the three-section visual hierarchy and keep scientific claims aligned with the evidence available. Do not activate visitor tracking or publish private research material as part of routine site updates.

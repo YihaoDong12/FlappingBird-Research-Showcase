@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1a1e">
-<meta name="description" content="Flapping Bird Research: learning natural wing motion, developing articulated mechanisms and connecting motion, aerodynamic forces and flow.">
-<title>Flapping Bird Research</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261014-research">
+<meta name="description" content="Learning and imitating flapping bird trajectories through motion capture, mechanism design and aerodynamic modelling.">
+<title>Learning and Imitating Flapping Bird Trajectories</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261014-animation">
 </head>
 <body>
 <a class="skip-link" href="#achieved">Skip to project achievements</a>
@@ -20,7 +20,7 @@
   <div class="hero-visual"><video id="hero-video" class="ambient-video" autoplay muted loop playsinline preload="auto" poster="media/flight-side.jpg" src="media/flight-side.mp4" aria-label="A flapping bird flying outdoors, shown as the title background"></video></div>
   <div class="hero-content wrap">
     <p class="eyebrow"><span class="small-line"></span> BIO-INSPIRED FLIGHT PROGRAM</p>
-    <h1 id="hero-title">Flapping <span>Bird</span></h1>
+    <h1 id="hero-title">Learning and Imitating <span>Flapping Bird Trajectories</span></h1>
     <p class="hero-description">Learn the motion.<br>Understand the forces. Shape the flight.</p>
     <a class="primary-link" href="#achieved">Explore the program <span aria-hidden="true"><span class="arrow" aria-hidden="true">↗</span></span></a>
   </div>
@@ -101,26 +101,22 @@
   </article>
   <article class="research-block" id="aerodynamics" aria-labelledby="aerodynamics-title">
     <div class="work-heading"><div><h3 class="subsection-title" id="aerodynamics-title"><span class="section-number">02.4</span><span class="subsection-name">Wing motion to aerodynamic understanding.</span></h3></div><span class="exploration-tag">METHOD DEVELOPMENT</span></div>
-    <p class="aero-intro">A single-DOF flapping wing provides a controlled starting point for wind-tunnel force measurements, wake studies and fluid–structure modelling.</p>
+    <p class="aero-intro">Single DOF · Force measurement · Wake dynamics</p>
     <div class="aero-grid">
       <figure class="aero-evidence">
-        <button class="figure-zoom" type="button" data-image="media/pinn-method.png" data-title="Fluid–skeleton PINN / Manuscript method" aria-label="Enlarge the fluid–skeleton PINN method figure"><img src="media/pinn-method.png" alt="Manuscript diagram of the joint fluid–skeleton physics-informed model, linking wing geometry, flow, structural motion and force prediction" loading="lazy"><span>Expand figure <span class="arrow" aria-hidden="true">↗</span></span></button>
-        <figcaption>Fluid–skeleton PINN <span>Method illustration</span></figcaption>
+        <button class="figure-zoom" type="button" data-image="media/wind-tunnel-study-animated.gif" data-title="Single-DOF wind-tunnel study" aria-label="Enlarge the wind-tunnel study animation"><img class="research-animation" src="media/wind-tunnel-study-animated.png" data-animation="media/wind-tunnel-study-animated.gif" data-poster="media/wind-tunnel-study-animated.png" alt="Animated diagram of a single-DOF wing cycle in a wind tunnel, with camera and force balance" loading="lazy" width="1000" height="562"></button>
+        <figcaption><h4>Wind-tunnel study</h4><span>EXPERIMENT DESIGN</span></figcaption>
+        <div class="aero-topics"><span>Flapping motion</span><span>Measured loads</span><span>Wake structure</span></div>
       </figure>
-      <div class="aero-model">
-        <p class="eyebrow">PHYSICS-INFORMED LEARNING</p>
-        <h4>Connect motion, flow and loads.</h4>
-        <p>A reduced-order FSI-PINN couples a bending wing skeleton with the surrounding flow, constrained by observed motion and physical laws.</p>
-        <ul class="model-constraints"><li>Motion observations constrain wing deformation.</li><li>Shared surface loads couple the fluid and structure.</li><li>Sensor reactions include aerodynamic, inertial and gravity effects.</li></ul>
-        <p class="model-validation">Aerodynamic force is not the total measured support reaction. Experimental validation is planned.</p>
-      </div>
+      <span class="aero-link" aria-hidden="true">→</span>
+      <figure class="aero-evidence pinn-evidence">
+        <button class="figure-zoom" type="button" data-image="media/pinn-workflow-animated.gif" data-title="FSI-PINN / Motion, physics and force prediction" aria-label="Enlarge the PINN workflow animation"><img class="research-animation" src="media/pinn-workflow-animated.png" data-animation="media/pinn-workflow-animated.gif" data-poster="media/pinn-workflow-animated.png" alt="Animated sequence from observed wing motion and loads to coupled physics-informed learning and force outputs" loading="lazy" width="1000" height="562"></button>
+        <figcaption><h4>FSI-PINN aerodynamic model</h4><span>METHOD DEVELOPMENT</span></figcaption>
+        <div class="pinn-stage-labels" aria-label="PINN modelling sequence"><span>Motion &amp; loads</span><span>Flow &amp; structure</span><span>Force &amp; reaction</span></div>
+        <div class="physics-links"><span>Fluid physics</span><span>Wing dynamics</span><span>Sensor balance</span></div>
+      </figure>
     </div>
-    <div class="aero-steps flow-cards four-step" aria-label="Planned aerodynamic study workflow">
-      <div class="flow-step"><i class="flow-number">CONTROL</i><strong>Prescribe flapping</strong><p>Single DOF · Inflow conditions</p></div><span class="flow-arrow" aria-hidden="true"><span class="arrow" aria-hidden="true">→</span></span>
-      <div class="flow-step"><i class="flow-number">MEASURE</i><strong>Record motion &amp; loads</strong><p>Synchronized cameras · Forces</p></div><span class="flow-arrow" aria-hidden="true"><span class="arrow" aria-hidden="true">→</span></span>
-      <div class="flow-step"><i class="flow-number">RECONSTRUCT</i><strong>Study flow &amp; structure</strong><p>Surface loads · Wake dynamics</p></div><span class="flow-arrow" aria-hidden="true"><span class="arrow" aria-hidden="true">→</span></span>
-      <div class="flow-step"><i class="flow-number">VALIDATE</i><strong>Test unseen conditions</strong><p>Frozen model · Held-out trials</p></div>
-    </div>
+    <p class="aero-status">Illustrative motion · Experimental validation planned.</p>
   </article>
   <section class="research-output output-collection" id="outputs" aria-labelledby="outputs-title">
     <header class="output-heading"><div class="output-title"><p class="eyebrow">RESEARCH MATERIALS</p><h3 class="subsection-title" id="outputs-title"><span class="section-number">02.5</span><span class="subsection-name">Research outputs</span></h3></div><a class="secondary-link" href="https://github.com/YihaoDong12/FlappingBird-Research-Showcase" target="_blank" rel="noopener noreferrer">Research repository <span><span class="arrow" aria-hidden="true">↗</span></span></a></header>
@@ -185,14 +181,15 @@
   </div>
 
   <article class="significance-panel" id="significance" aria-labelledby="significance-title">
-    <h3 class="subsection-title" id="significance-title"><span class="section-number">03.4</span><span class="subsection-name">Understand what makes flapping effective.</span></h3>
-    <p class="significance-lead">From describing wing motion to testing why it works.</p>
-    <div class="significance-grid">
-      <figure class="significance-card"><img src="media/significance-natural-motion.png" alt="Concept illustration of a natural flapping bird with successive wing positions and a motion path" loading="lazy" width="1672" height="941"><figcaption><h4>Learn from nature</h4><p>Study evolved wing motions across flight conditions to identify useful strategies, without assuming one universally optimal pattern.</p></figcaption></figure>
-      <figure class="significance-card"><img src="media/significance-motion-flow.png" alt="Concept illustration linking an articulated flapping wing to stylized wake structures, not simulated flow data" loading="lazy" width="1672" height="941"><figcaption><h4>Connect motion and forces</h4><p>Link controlled flapping, measured loads and wake structures to explain how wing motion produces lift, thrust and aerodynamic costs.</p></figcaption></figure>
-      <figure class="significance-card"><img src="media/significance-motion-strategy.png" alt="Concept illustration of an articulated flapping bird and alternative wing trajectories" loading="lazy" width="1672" height="941"><figcaption><h4>Explore efficient trajectories</h4><p>Compare candidate wing trajectories under matched flight demands, seeking efficiency gains that can be verified experimentally.</p></figcaption></figure>
+    <h3 class="subsection-title" id="significance-title"><span class="section-number">03.4</span><span class="subsection-name">From natural motion to efficient flight.</span></h3>
+    <div class="significance-grid" aria-label="Observe evolved motion, explain its aerodynamics, then improve flight trajectories">
+      <figure class="significance-card"><img src="media/significance-natural-motion.png" alt="Concept illustration of a natural flapping bird with successive wing positions and a motion path" loading="lazy" width="1672" height="941"><figcaption><h4><span>01</span> Observe</h4><p>Evolved wing motion</p></figcaption></figure>
+      <span class="significance-arrow" aria-hidden="true">→</span>
+      <figure class="significance-card"><img src="media/significance-motion-flow.png" alt="Concept illustration linking an articulated flapping wing to stylized wake structures" loading="lazy" width="1672" height="941"><figcaption><h4><span>02</span> Explain</h4><p>Motion, forces &amp; wake</p></figcaption></figure>
+      <span class="significance-arrow" aria-hidden="true">→</span>
+      <figure class="significance-card"><img src="media/significance-motion-strategy.png" alt="Concept illustration of an articulated flapping bird and alternative wing trajectories" loading="lazy" width="1672" height="941"><figcaption><h4><span>03</span> Improve</h4><p>Efficient, task-specific trajectories</p></figcaption></figure>
     </div>
-    <p class="significance-footer">Research aims, not established outcomes. Concept illustrations are not experimental evidence.</p>
+    <p class="significance-footer">Research aims · Concept illustrations</p>
     <details class="research-references"><summary>Scientific context</summary><ol>
       <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11573650/" target="_blank" rel="noopener noreferrer">Johansson (2024) · Aerodynamic efficiency explains flapping strategies used by birds · PNAS</a></li>
       <li><a href="https://www.nature.com/articles/s41467-019-13347-3" target="_blank" rel="noopener noreferrer">Chin &amp; Lentink (2019) · Birds repurpose the role of drag and lift to take off and land · Nature Communications</a></li>
@@ -220,5 +217,5 @@
 <dialog id="film-dialog" aria-labelledby="film-title"><div class="dialog-heading"><h2 id="film-title">Project film</h2><button id="close-film" type="button" aria-label="Close video">Close <span>×</span></button></div><video id="dialog-video" controls playsinline preload="metadata"></video><p class="dialog-hint">ESC to close · Use the player controls for fullscreen</p></dialog>
 <dialog id="image-dialog" aria-labelledby="image-title"><div class="dialog-heading"><h2 id="image-title">Research figure</h2><button id="close-image" type="button" aria-label="Close image">Close <span>×</span></button></div><img id="dialog-image" alt=""><p class="dialog-hint">ESC to close</p></dialog>
 <div id="notice" role="status" aria-live="polite" hidden></div><noscript><p class="noscript">Media enlargement requires JavaScript. All research content remains available to read.</p></noscript>
-<script src="app.js?v=20261014-research"></script>
+<script src="app.js?v=20261014-animation"></script>
 </body></html>
