@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "mode": "built-in image_gen",
+  "source_method": "Author-provided Overleaf export: pinn-figures-v9.tex; model topology and joint hierarchy from author mechanism.png, Model.png and fourbar3d_python.py.",
+  "mapping": {
+    "Shoulder": "A",
+    "Elbow": "G",
+    "Wrist": "L",
+    "Wingtip": "U"
+  },
+  "scope": "Static concept schematics grounded in the supplied manuscript and linkage topology."
+}

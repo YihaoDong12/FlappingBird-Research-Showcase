@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c1a1e">
 <meta name="description" content="Learning and imitating flapping bird trajectories through motion capture, mechanism design and aerodynamic modelling.">
-<title>Learning and Imitating Flapping Bird Trajectories</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261014-animation">
+<title>Learning and Imitating Flapping Bird Trajectories</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261014-full-process">
 </head>
 <body>
 <a class="skip-link" href="#achieved">Skip to project achievements</a>
@@ -70,6 +70,10 @@
   </article>
   <article class="research-block mechanism-block">
     <div class="work-heading"><div><h3 class="subsection-title"><span class="section-number">02.2</span><span class="subsection-name">Motion targets to mechanism design.</span></h3></div></div>
+    <figure class="mechanism-joint-map">
+      <button class="figure-zoom" type="button" data-image="media/mechanism-top-joints-v3.png" data-title="Top-view mechanism / Shoulder, elbow and wrist" aria-label="Enlarge the mechanism joint correspondence"><img src="media/mechanism-top-joints-v3.png" alt="Complete half-wing mechanism in top view with shoulder at A, elbow at G, wrist at L and wingtip at U" loading="lazy"></button>
+      <figcaption><span>Shoulder / A <span class="arrow" aria-hidden="true">→</span> Elbow / G <span class="arrow" aria-hidden="true">→</span> Wrist / L <span class="arrow" aria-hidden="true">→</span> Wingtip / U</span><span>FUNCTIONAL JOINT MAPPING</span></figcaption>
+    </figure>
     <figure class="film-card mechanism-film"><div class="film-screen"><video class="ambient-video" autoplay muted loop playsinline preload="metadata" poster="media/mechanism.jpg" src="media/mechanism.mp4" aria-label="Mechanism simulation and reference-path comparison"></video><button class="expand-button" type="button" data-film="media/mechanism.mp4" data-title="Mechanism motion / Target and generated paths" aria-label="Enlarge mechanism simulation"><span class="arrow" aria-hidden="true">↗</span></button></div><figcaption><span>Mechanism motion and path comparison</span><span class="simulation-label">SIMULATION / INTERIM RESULTS</span></figcaption></figure>
     <div class="mechanism-summary flow-cards three-step" aria-label="Mechanism design sequence"><div class="flow-step"><i class="flow-number">STEP 1</i><strong>Extend the model</strong><p>3 joints · 5 DOF</p></div><span class="flow-arrow" aria-hidden="true"><span class="arrow" aria-hidden="true">→</span></span><div class="flow-step"><i class="flow-number">STEP 2</i><strong>Optimize the design</strong><p>Link lengths · Cyclic motion</p></div><span class="flow-arrow" aria-hidden="true"><span class="arrow" aria-hidden="true">→</span></span><div class="flow-step"><i class="flow-number">STEP 3</i><strong>Compare motion</strong><p>Target and generated paths</p></div></div>
   </article>
@@ -108,12 +112,9 @@
         <figcaption><h4>Wind-tunnel study</h4><span>EXPERIMENT DESIGN</span></figcaption>
         <div class="aero-topics"><span>Flapping motion</span><span>Measured loads</span><span>Wake structure</span></div>
       </figure>
-      <span class="aero-link" aria-hidden="true">→</span>
-      <figure class="aero-evidence pinn-evidence">
-        <button class="figure-zoom" type="button" data-image="media/pinn-learning-concept-v2.png" data-title="FSI-PINN / Motion, physics and force prediction" aria-label="Enlarge the PINN learning illustration"><img src="media/pinn-learning-concept-v2.png" alt="Observation, coupled wing-and-flow learning, and force prediction connected in three stages" loading="lazy" width="1672" height="941"></button>
-        <figcaption><h4>FSI-PINN aerodynamic model</h4><span>METHOD DEVELOPMENT</span></figcaption>
-        <div class="pinn-stage-labels" aria-label="PINN modelling sequence"><span>Motion &amp; loads</span><span>Flow &amp; structure</span><span>Force &amp; reaction</span></div>
-        <div class="physics-links"><span>Fluid physics</span><span>Wing dynamics</span><span>Sensor balance</span></div>
+      <figure class="aero-evidence full-process-figure">
+        <button class="figure-zoom" type="button" data-image="media/pinn-full-process-v3.png" data-title="Observation-constrained fluid–skeleton PINN / Complete process" aria-label="Enlarge the complete PINN process and equations"><img src="media/pinn-full-process-v3.png" alt="Six-stage manuscript workflow with equations: known drive and observations; shared skeleton and surface geometry; flow traction and load projection; dynamic balance; joint physics and observation training; frozen prediction of shape, aerodynamic force and support reaction" loading="lazy"></button>
+        <figcaption><h4>From observations to force prediction</h4><span>MANUSCRIPT METHOD</span></figcaption>
       </figure>
     </div>
     <p class="aero-status">Concept illustrations · Experimental validation planned.</p>
