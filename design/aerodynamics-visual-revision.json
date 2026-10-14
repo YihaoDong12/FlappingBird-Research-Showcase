@@ -1,0 +1,15 @@
+{
+  "mode": "built-in image_gen",
+  "date": "2026-10-14",
+  "assets": [
+    {
+      "file": "aerodynamics-test-concept-v2.png",
+      "prompt": "Use case: scientific-educational. Asset type: refined 16:9 research website concept illustration. Show a single-degree-of-freedom membrane flapping-wing experiment inside a transparent wind-tunnel test section. One spherical streamlined test body mounted above a compact three-axis force balance, one articulated graphite wing skeleton covered with pale translucent membrane attached to its side, a single root flapping actuator and a discreet high-speed camera outside the glass. A restrained second faint wing position shows the flapping cycle. Subtle teal airflow traces behind the wing suggest wake study, not measured flow. Match a premium editorial engineering illustration: warm ivory background and studio lighting, graphite spars, brushed silver hardware, muted sage and slate blue with very small copper accents, soft realistic shadows, clean physical construction. Whole apparatus fully visible, tight landscape framing, no large margins. No text, labels, numbers, equations, logos, watermark, neon, holograms, dense smoke, or fabricated charts. This is an illustrative planned experimental setup, not a photograph of completed research."
+    },
+    {
+      "file": "pinn-learning-concept-v2.png",
+      "prompt": "Use case: scientific-educational. Asset type: 16:9 clean technical concept illustration for an English flapping-bird research website. Visually explain an observation-constrained fluid–skeleton physics-informed neural model using exactly three balanced left-to-right groups, connected by simple thick muted slate arrows. Left group: camera and miniature membrane-wing test rig with a compact force sensor, representing synchronized wing motion and measured reaction. Center group: one realistic pale membrane wing supported by graphite spars, a discreet sparse network of connected nodes behind it and a few smooth teal airflow lines around it, representing jointly learned shape and flow constrained by physics; not a brain or glowing AI icon. Right group: the same wing with two modest copper/teal force arrows plus a small separate load-cell base, representing predicted aerodynamic loads and support reaction. Consistent warm ivory studio background, graphite, desaturated slate blue, sage, restrained copper, realistic soft shadows and precise editorial 3D illustration. All three groups fully visible, visual clarity at small website size, tight layout. No letters, words, equations, numbers, axes, charts, badges, logos, watermarks, neon or holograms. Do not depict independent membrane dynamics, guaranteed prediction accuracy or experimental results. Website supplies all labels outside this image."
+    }
+  ],
+  "purpose": "Replace dense 02.4 manuscript figure and prose with an experiment illustration and a concise visual PINN workflow."
+}
