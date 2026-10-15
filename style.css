@@ -1228,6 +1228,7 @@ dialog::backdrop { background: #030d12e8; backdrop-filter: blur(12px); }
 }
 /* Full-width experimental and model figures. */
 #aerodynamics .aero-grid { grid-template-columns: minmax(0,1fr); gap: 20px; }
+#aerodynamics .aero-evidence, .mechanism-joint-map { width: 88%; max-width: 1080px; margin-inline: auto; }
 #aerodynamics .aero-grid .figure-zoom > img { aspect-ratio: auto; height: auto; object-fit: contain; }
 .mechanism-joint-map { margin: 0 0 18px; border: 1px solid #415b73; background: #172b3c; }
 .mechanism-joint-map .figure-zoom { display: block; width: 100%; padding: 0; border: 0; background: #f6f2e9; cursor: zoom-in; }
@@ -1235,5 +1236,6 @@ dialog::backdrop { background: #030d12e8; backdrop-filter: blur(12px); }
 .mechanism-joint-map .figure-zoom:focus-visible { outline: 3px solid #b8d3e8; outline-offset: 4px; }
 .mechanism-joint-map figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; padding: 12px 14px; color: #b8cddd; font-size: var(--fs-label); }
 @media (max-width: 760px) {
+  #aerodynamics .aero-evidence, .mechanism-joint-map { width: 100%; }
   #dialog-image[src*="pinn-full-process"], #dialog-image[src*="mechanism-top-joints"] { min-width: 1200px; }
 }

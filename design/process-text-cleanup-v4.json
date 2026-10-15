@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-15",
+  "mode": "built-in image_gen edit",
+  "input": "media/pinn-full-process-v3.png",
+  "output": "media/pinn-full-process-v4.png",
+  "layout": "Standalone desktop illustrations centered at 88% of the content width, capped at 1080px; mobile illustrations use available width."
+}
